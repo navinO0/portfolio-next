@@ -94,7 +94,7 @@ const AboutComponent = () => {
                             further fueled my passion for building robust and efficient
                             systems. I’m grateful to have turned my passion into a career,
                             constantly learning and improving to create impactful digital
-                            experiences! 🚀
+                            experiences! 
                         </p>
                     </div>
 
