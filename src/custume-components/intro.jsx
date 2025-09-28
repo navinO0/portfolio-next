@@ -19,14 +19,16 @@ const IntroComponent = () => {
           </Avatar> */}
 
           <div className="flex-1 space-y-6 text-start  md:text-left">
-            <p className="text-sm uppercase tracking-wide text-gray-400">
-              Hi, My Name is
-            </p>
+           <p className="text-sm  tracking-wide text-blue-500">
+  Hi, My Name is
+</p>
+
 
             <div>
-              <h1 className="text-4xl font-bold tracking-tight text-white">
-                Naveen Kumar
-              </h1>
+              <h1 className="text-4xl font-bold tracking-tight text-red-400">
+  Naveen Kumar
+</h1>
+
               <h3 className="text-lg font-medium text-gray-300 mt-2">
                 I Build Things for the Web.
               </h3>

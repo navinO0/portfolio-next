@@ -29,7 +29,7 @@ const ProjectItem = ({ projectItem }) => {
         </CardHeader>
 
         <CardContent className="space-y-4">
-          <Carousel
+          {/* <Carousel
             className="w-full overflow-hidden rounded-xl border border-white/10"
             plugins={[autoplay.current]}
             onMouseEnter={autoplay.current.stop}
@@ -45,7 +45,7 @@ const ProjectItem = ({ projectItem }) => {
             </CarouselContent>
             <CarouselPrevious className="text-white/70 hover:text-white" />
             <CarouselNext className="text-white/70 hover:text-white" />
-          </Carousel>
+          </Carousel> */}
 
           {/* Key Points */}
           <ScrollArea className="h-72 pr-2">
