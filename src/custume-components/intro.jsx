@@ -7,10 +7,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const IntroComponent = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black p-6 w-screen text-white">
+    <div className="flex justify-center items-center  min-h-screen bg-black   text-white">
       <Fade duration={2000} >
         {/* Glassmorphism Container */}
-        <div class="w-full md:max-w-7xl mx-auto p-8 rounded-3xl bg-black/70 backdrop-blur-md shadow-2xl flex flex-col md:flex-row items-center gap-8">
+        <div class="  w-full md:max-w-7xl mx-auto p-8 rounded-3xl bg-black/70 backdrop-blur-md shadow-2xl flex flex-col md:flex-row items-center gap-8">
 
           {/* Avatar */}
           {/* <Avatar className="w-32 h-32 border-2 border-gray-300 shadow-lg">
@@ -34,7 +34,7 @@ const IntroComponent = () => {
               </h3>
             </div>
 
-            <div className="text-base font-light font-sans font-typewriter text-l text-gray-300 text-start w-full md:min-w-7xl leading-relaxed">
+            <div className="text-base font-light font-sans max-w-screen font-typewriter text-l text-gray-300 text-start w-full md:min-w-[70vw] max-w-screen leading-relaxed">
               <ReactTyped
                 className="block"
                 strings={[

@@ -71,7 +71,7 @@ const AboutComponent = () => {
             className="flex justify-center items-center py-16 px-6 bg-black text-white"
         >
             <Fade duration={2000} >
-                <div className="max-w-7xl w-full p-8 rounded-3xl bg-black/70 backdrop-blur-md  shadow-2xl space-y-8">
+                <div className="max-w-7xl w-full  rounded-3xl bg-black/70 backdrop-blur-md  shadow-2xl space-y-8">
 
                     <h2 className="text-3xl font-bold text-center text-white">About Me</h2>
                     <Separator className="border-gray-700" />
@@ -115,7 +115,7 @@ const AboutComponent = () => {
                             ]}
                             typeSpeed={60}
                             backSpeed={40}
-                            backDelay={1000}
+                            backDelay={700}
                             loop
                         />
                     </div>
@@ -159,7 +159,7 @@ const AboutComponent = () => {
                             <ul className=" list-inside space-y-2 text-gray-300">
                                 {experience.company.map((item, idx) => (
                                     <Fade key={idx} duration={1200} >
-                                        <li className="font-medium list-style-none">{item}</li>
+                                        <li className="font-medium list-style-none text-white">{item}</li>
                                     </Fade>
                                 ))}
                                 {experience.expContent.map((item, idx) => (

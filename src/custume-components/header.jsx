@@ -5,7 +5,7 @@ import { GrReactjs } from 'react-icons/gr'
 import { SiAboutdotme } from 'react-icons/si'
 import { MdContactMail } from 'react-icons/md'
 import { AiFillFilePdf } from 'react-icons/ai'
-import { Button } from "@/components/ui/button" // shadcn button
+import { Button } from "@/components/ui/button" 
 
 const HeaderComponent = () => (
   <header className="w-full fixed top-0 left-0 bg-black/70 backdrop-blur-md z-50">

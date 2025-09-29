@@ -48,7 +48,7 @@ const ProjectItem = ({ projectItem }) => {
           </Carousel> */}
 
           {/* Key Points */}
-          <ScrollArea className="h-72 pr-2">
+          <ScrollArea className="h-100 pr-2">
             <ul className="list-disc list-inside text-sm space-y-1">
               {projectKeyPoints.map((point, idx) => (
                 <li key={idx} className="text-gray-300">
