@@ -124,30 +124,34 @@ const AboutComponent = () => {
 
                     <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-4">
                         {techStackIcons.map(({ icon: Icon, label }, idx) => (
-                            <motion.div
-                                key={idx}
-                                className="flex flex-col items-center gap-2 text-center cursor-pointer"
-                                whileHover={{ scale: 1.2, rotate: 10 }} // icon grows and rotates slightly on hover
-                                whileTap={{ scale: 0.9 }} // slight shrink on click/tap
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                // transition={{ delay: idx * 0.05, type: "spring", stiffness: 200 }}
-                                viewport={{ once: false }}
-                                transition={{
-                                    delay: idx * 0.1,     // stagger effect
-                                    type: "spring",       // spring motion
-                                    stiffness: 150,       // spring tightness
-                                    damping: 12,          // controls bounce (lower = more bounce)
-                                }}
-                            >
-                                <Icon className="text-4xl text-white transition-colors duration-300 hover:text-blue-400" />
-                                <Badge
-                                    variant="outline"
-                                    className="text-gray-300 border-gray-600 transition-colors duration-300 hover:text-blue-400 hover:border-blue-400"
-                                >
-                                    {label}
-                                </Badge>
-                            </motion.div>
+ <motion.div
+  key={idx}
+  className="flex flex-col items-center gap-2 text-center cursor-pointer"
+  whileHover={{ scale: 1.2, rotate: 10 }}
+  whileTap={{ scale: 0.9 }}
+  initial={{ opacity: 0, y: 0 }}
+  animate={{
+    opacity: [1, 0.6, 1, 0.8, 1], // flicker effect
+    y: [0, -12, 0, -6, 0],        // bounce oddly
+    rotate: [0, 3, -3, 2, 0],     // wobble effect
+  }}
+  transition={{
+    delay: idx * 0.2,    // stagger each icon
+    duration: 2,         // cycle duration
+    repeat: Infinity,    // loop forever
+    repeatType: "mirror",
+    ease: "easeInOut",
+  }}
+  viewport={{ once: false }}
+>
+  <Icon className="text-4xl text-white transition-colors duration-300 hover:text-blue-400" />
+  <Badge
+    variant="outline"
+    className="text-gray-300 border-gray-600 transition-colors duration-300 hover:text-blue-400 hover:border-blue-400"
+  >
+    {label}
+  </Badge>
+</motion.div>
                         ))}
                     </div>
 

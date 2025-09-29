@@ -189,7 +189,7 @@ export const projectsObject = [
           'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743326823/Screenshot_2025-03-30_145205_nmn04t.png',
       },
     ],
-    projectLink: 'https://qrauthnext.netlify.app/white-board',
+    projectLink: 'https://cbwb.netlify.app/',
     projectAbt:
       'The Collaborative Whiteboard is a real-time, room-based whiteboard application designed for seamless collaboration. It allows users to create private rooms, draw, erase, chat, and interact with a shared canvas efficiently. The backend is powered by Fastify, Redis is used for managing rooms and storing whiteboard data, and the frontend is built with Next.js.',
     projectKeyPoints: [
