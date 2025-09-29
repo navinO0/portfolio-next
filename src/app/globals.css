@@ -236,3 +236,46 @@
     font-size: 1.8em;
   }
 }
+
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine .shine {
+  position: absolute;
+  top: 0;
+  left: -75%;           /* start off the left */
+  width: 50%;           /* narrow diagonal streak */
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg); /* diagonal tilt */
+  pointer-events: none;
+  opacity: 0;
+}
+
+.card-shine:hover .shine {
+  opacity: 1;
+  animation: glassShine 0.3s ease-in-out forwards; /* run once on hover */
+}
+
+@keyframes glassShine {
+  0% {
+    left: -75%;
+    opacity: 1;
+  }
+  80% {
+    left: 125%;  /* move across card */
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0; /* fade out at the end */
+  }
+}
+
