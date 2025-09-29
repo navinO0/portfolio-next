@@ -18,7 +18,7 @@ const ProjectItem = ({ projectItem }) => {
 
   return (
     <Fade duration={1500}>
-      <Card className="w-full  bg-zinc-900 text-white border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition">
+      <Card className="w-full  bg-zinc-900 text-white h-full border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition">
         <CardHeader>
           <CardTitle className="text-lg font-semibold tracking-wide hover:text-blue-400 transition">
             <a href={projectLink} target="_blank" rel="noreferrer">

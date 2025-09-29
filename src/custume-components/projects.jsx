@@ -4,6 +4,37 @@ import ProjectItem from "./projectItem"
 import MiniProjectItem from "./miniProjectItem"
 
 const projectsObject = [
+   {
+  id: '7',
+  projectTitle: 'AI Interview Coach',
+  thumbnail:
+    'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
+  thumbnails: [
+    {
+      id: 1,
+      imgUrl:
+        'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
+    },
+  ],
+  projectLink: 'https://interviewguideai.netlify.app/',
+  projectAbt:
+    'An AI-powered platform designed to help job seekers practice technical and behavioral interview questions. It provides instant feedback, performance analytics, and personalized improvement suggestions to enhance interview readiness.',
+  projectKeyPoints: [
+    'AI-driven real-time interview simulation for technical and HR rounds.',
+    'Detailed performance analytics with strengths and improvement areas.',
+    'Voice-based interaction to simulate real interview experience.',
+    'Feedback on communication skills, clarity, and confidence.',
+    'Adaptive difficulty — questions scale with user performance.',
+    'Save and review past mock interviews for continuous learning.',
+    'Integrated with cloud deployment for seamless accessibility.',
+    'Admin panel to add, update, and categorize interview questions.',
+    'Supports coding, system design, and behavioral interview practice.',
+  ],
+  technologiesUsed:
+    ' React.js, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, OpenAI API(Gemini),AWS EC2, Netlify',
+  gitHubLink: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
+  docUrl: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
+},
   {
     id: '6',
     projectTitle: 'Collaborative Whiteboard',
@@ -209,50 +240,50 @@ const projectsObject = [
     gitHubLink: 'https://github.com/navinO0/NxtWatch.git',
     docUrl: null,
   },
-  {
-    id: '4',
-    projectTitle: 'Jobby App',
-    thumbnail:
-      'https://res.cloudinary.com/dzapdxkgc/image/upload/v1682670459/Screenshot_2023-04-27_191050_wyv8n8.png',
-    thumbnails: [
-      {
-        id: 1,
-        imgUrl:
-          'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324712/Screenshot_2025-03-30_142057_xstuac.png',
-      },
-      {
-        id: 2,
-        imgUrl:
-          'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142110_bfponv.png',
-      },
-      {
-        id: 3,
-        imgUrl:
-          'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142123_fzo3wn.png',
-      },
-      {
-        id: 4,
-        imgUrl:
-          'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142135_yotqb9.png',
-      },
-    ],
-    projectLink: 'https://jobbynavin.ccbp.tech/',
-    projectAbt:
-      'Implemented Jobby App where users can log in and can see a list of jobs with search by Job title, filters based on Salary range and Employment type, etc',
-    projectKeyPoints: [
-      ' Implemented different pages like Login, Home, Jobs, Job item details using React components, props, state, lists, event handlers, form inputs.',
-      ' Authenticating by taking username, password and doing login post HTTP API Call.',
-      ' Persisted user login state by keeping jwt token in client storage, Sending it in headers of further API calls to authorize the user.',
-      'Implemented different routes for Login, Home, Jobs, Job item details pages by using React Router components Route, Switch, Link.',
-      ' Implemented filters and search text by sending them as query parameters to jobs API calls.',
-      'Redirecting to the login page if the user tries to open Home, Jobs, Job item details routes which need authentication by implementing protected Route.',
-    ],
-    technologiesUsed:
-      ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authentication',
-    credentials: 'Username : rahul   And  Password : rahul@2021',
-    gitHubLink: 'https://github.com/navinO0/jobbyApp.git',
-    docUrl: null,
-  },
+  // {
+  //   id: '4',
+  //   projectTitle: 'Jobby App',
+  //   thumbnail:
+  //     'https://res.cloudinary.com/dzapdxkgc/image/upload/v1682670459/Screenshot_2023-04-27_191050_wyv8n8.png',
+  //   thumbnails: [
+  //     {
+  //       id: 1,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324712/Screenshot_2025-03-30_142057_xstuac.png',
+  //     },
+  //     {
+  //       id: 2,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142110_bfponv.png',
+  //     },
+  //     {
+  //       id: 3,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142123_fzo3wn.png',
+  //     },
+  //     {
+  //       id: 4,
+  //       imgUrl:
+  //         'https://res.cloudinary.com/dzapdxkgc/image/upload/v1743324713/Screenshot_2025-03-30_142135_yotqb9.png',
+  //     },
+  //   ],
+  //   projectLink: 'https://jobbynavin.ccbp.tech/',
+  //   projectAbt:
+  //     'Implemented Jobby App where users can log in and can see a list of jobs with search by Job title, filters based on Salary range and Employment type, etc',
+  //   projectKeyPoints: [
+  //     ' Implemented different pages like Login, Home, Jobs, Job item details using React components, props, state, lists, event handlers, form inputs.',
+  //     ' Authenticating by taking username, password and doing login post HTTP API Call.',
+  //     ' Persisted user login state by keeping jwt token in client storage, Sending it in headers of further API calls to authorize the user.',
+  //     'Implemented different routes for Login, Home, Jobs, Job item details pages by using React Router components Route, Switch, Link.',
+  //     ' Implemented filters and search text by sending them as query parameters to jobs API calls.',
+  //     'Redirecting to the login page if the user tries to open Home, Jobs, Job item details routes which need authentication by implementing protected Route.',
+  //   ],
+  //   technologiesUsed:
+  //     ' React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authentication',
+  //   credentials: 'Username : rahul   And  Password : rahul@2021',
+  //   gitHubLink: 'https://github.com/navinO0/jobbyApp.git',
+  //   docUrl: null,
+  // },
   {
     id: '5',
     projectTitle: 'Form Validation',
@@ -285,6 +316,7 @@ const projectsObject = [
     gitHubLink: 'https://github.com/navinO0/form-validation-frontend.git',
     docUrl: null,
   },
+ 
 ]
 
 const miniProjectObj = [

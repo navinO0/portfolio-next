@@ -12,7 +12,7 @@ const ContactComponent = () => (
     id="contact"
     className="bg-black text-white py-16 px-6 flex flex-col items-center"
   >
-    <Fade direction="" triggerOnce duration={1000}>
+    <Fade direction=""  duration={1000}>
       <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-4xl font-bold">Get In Touch</h1>
         <p className="text-gray-300 text-lg leading-relaxed">

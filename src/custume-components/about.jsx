@@ -70,15 +70,12 @@ const AboutComponent = () => {
             id="about"
             className="flex justify-center items-center py-16 px-6 bg-black text-white"
         >
-            <Fade duration={2000} triggerOnce>
-                {/* Custom Container */}
+            <Fade duration={2000} >
                 <div className="max-w-7xl w-full p-8 rounded-3xl bg-black/70 backdrop-blur-md  shadow-2xl space-y-8">
 
-                    {/* Title */}
                     <h2 className="text-3xl font-bold text-center text-white">About Me</h2>
                     <Separator className="border-gray-700" />
 
-                    {/* Intro */}
                     <div className="space-y-6 text-gray-300">
                         <p>
                             Hello! My name is <span className="font-semibold">Naveen</span>,
@@ -149,25 +146,25 @@ const AboutComponent = () => {
 
 
                     {/* Experience */}
-                    <div className="flex gap-6">
+                    <div className="flex gap-50">
                         <div>
                         <h3 className="text-xl font-semibold mb-2 text-white">Experience</h3>
-                        <ul className="list-disc list-inside space-y-2 text-gray-300">
+                        <ul className=" list-inside space-y-2 text-gray-300">
                             {experience.company.map((item, idx) => (
-                                <Fade key={idx} duration={1200} triggerOnce>
-                                    <li className="font-medium">{item}</li>
+                                <Fade key={idx} duration={1200} >
+                                    <li className="font-medium list-style-none">{item}</li>
                                 </Fade>
                             ))}
                             {experience.expContent.map((item, idx) => (
-                                <Fade key={idx} duration={1200} triggerOnce>
-                                    <li>{item}</li>
+                                <Fade key={idx} duration={1200} >
+                                    <li className="list-disc list-style-disc">{item}</li>
                                 </Fade>
                             ))}
                         </ul>
 </div>
                         {/* Company Logo */}
                         <div className="mt-6 hidden md:flex justify-center items-center">
-                            <Fade duration={2000} triggerOnce>
+                            <Fade duration={2000} >
                                 <img
                                     src="https://res.cloudinary.com/dzapdxkgc/image/upload/v1740598607/Quantela_Logo_White-1_xtebtj.svg"
                                     alt="Quantela Logo"
