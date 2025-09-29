@@ -161,7 +161,7 @@ export default function Page() {
         return (
           <div
             key={idx}
-            ref={(el) => (iconRefs.current[idx] = el)}
+            ref={(el) => { iconRefs.current[idx] = el; }}
             className="absolute text-gray-400/20 pointer-events-none transition-transform duration-200 ease-out hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
             data-rotate={rotate}
             style={{
