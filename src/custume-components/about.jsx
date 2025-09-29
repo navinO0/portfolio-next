@@ -91,7 +91,7 @@ const AboutComponent = () => {
                             further fueled my passion for building robust and efficient
                             systems. I’m grateful to have turned my passion into a career,
                             constantly learning and improving to create impactful digital
-                            experiences! 
+                            experiences!
                         </p>
                     </div>
 
@@ -131,7 +131,14 @@ const AboutComponent = () => {
                                 whileTap={{ scale: 0.9 }} // slight shrink on click/tap
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: idx * 0.05, type: "spring", stiffness: 200 }}
+                                // transition={{ delay: idx * 0.05, type: "spring", stiffness: 200 }}
+                                viewport={{ once: false }}
+                                transition={{
+                                    delay: idx * 0.1,     // stagger effect
+                                    type: "spring",       // spring motion
+                                    stiffness: 150,       // spring tightness
+                                    damping: 12,          // controls bounce (lower = more bounce)
+                                }}
                             >
                                 <Icon className="text-4xl text-white transition-colors duration-300 hover:text-blue-400" />
                                 <Badge
@@ -148,20 +155,20 @@ const AboutComponent = () => {
                     {/* Experience */}
                     <div className="flex gap-50">
                         <div>
-                        <h3 className="text-xl font-semibold mb-2 text-white">Experience</h3>
-                        <ul className=" list-inside space-y-2 text-gray-300">
-                            {experience.company.map((item, idx) => (
-                                <Fade key={idx} duration={1200} >
-                                    <li className="font-medium list-style-none">{item}</li>
-                                </Fade>
-                            ))}
-                            {experience.expContent.map((item, idx) => (
-                                <Fade key={idx} duration={1200} >
-                                    <li className="list-disc list-style-disc">{item}</li>
-                                </Fade>
-                            ))}
-                        </ul>
-</div>
+                            <h3 className="text-xl font-semibold mb-2 text-white">Experience</h3>
+                            <ul className=" list-inside space-y-2 text-gray-300">
+                                {experience.company.map((item, idx) => (
+                                    <Fade key={idx} duration={1200} >
+                                        <li className="font-medium list-style-none">{item}</li>
+                                    </Fade>
+                                ))}
+                                {experience.expContent.map((item, idx) => (
+                                    <Fade key={idx} duration={1200} >
+                                        <li className="list-disc list-style-disc">{item}</li>
+                                    </Fade>
+                                ))}
+                            </ul>
+                        </div>
                         {/* Company Logo */}
                         <div className="mt-6 hidden md:flex justify-center items-center">
                             <Fade duration={2000} >
