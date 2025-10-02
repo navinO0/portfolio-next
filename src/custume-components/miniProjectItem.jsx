@@ -25,7 +25,7 @@ const MiniProjectItem = ({ eachOne }) => {
   return (
     <Fade duration={1500}>
   <li className="relative group p-4 bg-zinc-900 rounded-xl border border-white/10 shadow-md hover:shadow-lg transition overflow-hidden">
-    <span className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+    <span className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-300 ease-in-out"></span>
 
     <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">

@@ -25,6 +25,7 @@ import {
     SiPostman,
 } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
+import { experienceContent } from "../../assets";
 
 const techStackIcons = [
     { icon: AiFillHtml5, label: "HTML" },
@@ -48,21 +49,7 @@ const techStackIcons = [
     { icon: SiPostman, label: "Postman" },
 ];
 
-const experience = {
-    company: [
-        "Quantela",
-        "Software Engineer (Associate) | 01 June, 2023 - Present",
-    ],
-    title: "Backend Developer",
-    expContent: [
-        "Developed, tested, and deployed software solutions.",
-        "Participated in sprint planning and task prioritization.",
-        "Optimized algorithms and improved performance.",
-        "Created training materials for end-users.",
-        "Documented software methodologies and technical manuals.",
-        "Conducted testing and fixed software issues.",
-    ],
-};
+
 
 const AboutComponent = () => {
     return (
@@ -84,7 +71,10 @@ const AboutComponent = () => {
                             with a passion for problem-solving and creating efficient digital
                             solutions. Over time, I honed my skills in Node.js, Express.js,
                             Fastify, SQL, NoSQL, and React.js, focusing on API development,
-                            performance optimization, and system security.
+                            performance optimization, and system security. Currently, I'm
+                            seeking opportunities to apply my expertise in a dynamic and
+                            innovative environment. Let's collaborate and bring your ideas to
+                            life!
                         </p>
                         <p>
                             Exploring DevOps, CI/CD, and cloud technologies (AWS, Azure) has
@@ -124,34 +114,34 @@ const AboutComponent = () => {
 
                     <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-4">
                         {techStackIcons.map(({ icon: Icon, label }, idx) => (
- <motion.div
-  key={idx}
-  className="flex flex-col items-center gap-2 text-center cursor-pointer"
-  whileHover={{ scale: 1.2, rotate: 10 }}
-  whileTap={{ scale: 0.9 }}
-  initial={{ opacity: 0, y: 0 }}
-  animate={{
-    opacity: [1, 0.6, 1, 0.8, 1], // flicker effect
-    y: [0, -12, 0, -6, 0],        // bounce oddly
-    rotate: [0, 3, -3, 2, 0],     // wobble effect
-  }}
-  transition={{
-    delay: idx * 0.2,    // stagger each icon
-    duration: 2,         // cycle duration
-    repeat: Infinity,    // loop forever
-    repeatType: "mirror",
-    ease: "easeInOut",
-  }}
-  viewport={{ once: false }}
->
-  <Icon className="text-4xl text-white transition-colors duration-300 hover:text-blue-400" />
-  <Badge
-    variant="outline"
-    className="text-gray-300 border-gray-600 transition-colors duration-300 hover:text-blue-400 hover:border-blue-400"
-  >
-    {label}
-  </Badge>
-</motion.div>
+                            <motion.div
+                                key={idx}
+                                className="flex flex-col items-center gap-2 text-center cursor-pointer"
+                                whileHover={{ scale: 1.2, rotate: 10 }}
+                                whileTap={{ scale: 0.9 }}
+                                initial={{ opacity: 0, y: 0 }}
+                                animate={{
+                                    opacity: [1, 0.6, 1, 0.8, 1], // flicker effect
+                                    y: [0, -12, 0, -6, 0],        // bounce oddly
+                                    rotate: [0, 3, -3, 2, 0],     // wobble effect
+                                }}
+                                transition={{
+                                    delay: idx * 0.2,    // stagger each icon
+                                    duration: 2,         // cycle duration
+                                    repeat: Infinity,    // loop forever
+                                    repeatType: "mirror",
+                                    ease: "easeInOut",
+                                }}
+                                viewport={{ once: false }}
+                            >
+                                <Icon className="text-4xl text-white transition-colors duration-300 hover:text-blue-400" />
+                                <Badge
+                                    variant="outline"
+                                    className="text-gray-300 border-gray-600 transition-colors duration-300 hover:text-blue-400 hover:border-blue-400"
+                                >
+                                    {label}
+                                </Badge>
+                            </motion.div>
                         ))}
                     </div>
 
@@ -161,12 +151,12 @@ const AboutComponent = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-2 text-white">Experience</h3>
                             <ul className=" list-inside space-y-2 text-gray-300">
-                                {experience.company.map((item, idx) => (
+                                {experienceContent.company.map((item, idx) => (
                                     <Fade key={idx} duration={1200} >
                                         <li className="font-medium list-style-none text-white">{item}</li>
                                     </Fade>
                                 ))}
-                                {experience.expContent.map((item, idx) => (
+                                {experienceContent.expContent.map((item, idx) => (
                                     <Fade key={idx} duration={1200} >
                                         <li className="list-disc list-style-disc">{item}</li>
                                     </Fade>

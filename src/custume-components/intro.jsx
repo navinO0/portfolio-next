@@ -4,6 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { ReactTyped } from "react-typed";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { introConent } from "../../assets";
 
 const IntroComponent = () => {
   return (
@@ -37,9 +38,7 @@ const IntroComponent = () => {
             <div className="text-base font-light font-sans max-w-screen font-typewriter text-l text-gray-300 text-start w-full md:min-w-[70vw] max-w-screen leading-relaxed">
               <ReactTyped
                 className="block"
-                strings={[
-                  "Logical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications. Judicious and creative when crafting effective websites, apps and platforms to propel competitive advantage and revenue growth. Technically proficient and analytical problem solver with calm and focused demeanor.",
-                ]}
+                strings={introConent}
                 typeSpeed={30}
                 backSpeed={50}
                 smartBackspace

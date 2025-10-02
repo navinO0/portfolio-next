@@ -126,37 +126,37 @@ export const experiences = [
 
 
 export const projectsObject = [
-   {
-  id: '7',
-  projectTitle: 'AI Interview Coach',
-  thumbnail:
-    'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
-  thumbnails: [
-    {
-      id: 1,
-      imgUrl:
-        'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
-    },
-  ],
-  projectLink: 'https://interviewguideai.netlify.app/',
-  projectAbt:
-    'An AI-powered platform designed to help job seekers practice technical and behavioral interview questions. It provides instant feedback, performance analytics, and personalized improvement suggestions to enhance interview readiness.',
-  projectKeyPoints: [
-    'AI-driven real-time interview simulation for technical and HR rounds.',
-    'Detailed performance analytics with strengths and improvement areas.',
-    'Voice-based interaction to simulate real interview experience.',
-    'Feedback on communication skills, clarity, and confidence.',
-    'Adaptive difficulty — questions scale with user performance.',
-    'Save and review past mock interviews for continuous learning.',
-    'Integrated with cloud deployment for seamless accessibility.',
-    'Admin panel to add, update, and categorize interview questions.',
-    'Supports coding, system design, and behavioral interview practice.',
-  ],
-  technologiesUsed:
-    ' React.js, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, OpenAI API(Gemini),AWS EC2, Netlify',
-  gitHubLink: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
-  docUrl: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
-},
+  {
+    id: '7',
+    projectTitle: 'AI Interview Coach',
+    thumbnail:
+      'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
+    thumbnails: [
+      {
+        id: 1,
+        imgUrl:
+          'https://res.cloudinary.com/dzapdxkgc/image/upload/v1748419200/ai-interview-coach-thumbnail.png',
+      },
+    ],
+    projectLink: 'https://interviewguideai.netlify.app/',
+    projectAbt:
+      'An AI-powered platform designed to help job seekers practice technical and behavioral interview questions. It provides instant feedback, performance analytics, and personalized improvement suggestions to enhance interview readiness.',
+    projectKeyPoints: [
+      'AI-driven real-time interview simulation for technical and HR rounds.',
+      'Detailed performance analytics with strengths and improvement areas.',
+      'Voice-based interaction to simulate real interview experience.',
+      'Feedback on communication skills, clarity, and confidence.',
+      'Adaptive difficulty — questions scale with user performance.',
+      'Save and review past mock interviews for continuous learning.',
+      'Integrated with cloud deployment for seamless accessibility.',
+      'Admin panel to add, update, and categorize interview questions.',
+      'Supports coding, system design, and behavioral interview practice.',
+    ],
+    technologiesUsed:
+      ' React.js, Next.js, Tailwind CSS, Node.js, Express.js, PostgreSQL, OpenAI API(Gemini),AWS EC2, Netlify',
+    gitHubLink: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
+    docUrl: 'https://docs.google.com/document/d/1ypTPkgMJO2eGj0uj0H0y0PmKFjz2HwlINtBf3T7W0Xw/edit?usp=sharing',
+  },
   {
     id: '6',
     projectTitle: 'Collaborative Whiteboard',
@@ -438,7 +438,7 @@ export const projectsObject = [
     gitHubLink: 'https://github.com/navinO0/form-validation-frontend.git',
     docUrl: null,
   },
- 
+
 ]
 
 export const miniProjectObj = [
@@ -476,3 +476,26 @@ export const miniProjectObj = [
   },
 ]
 
+
+
+export const introConent = [
+  "Logical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications. Judicious and creative when crafting effective websites, apps and platforms to propel competitive advantage and revenue growth. Technically proficient and analytical problem solver with calm and focused demeanor.",
+]
+
+
+export const experienceContent = {
+  company: [
+    "Quantela",
+    "Software Engineer (Associate) | 01 June, 2023 - Present",
+  ],
+  title: "Backend Developer",
+  expContent: [
+    "Developed and maintained scalable, production-grade RESTful APIs using Fastify and Node.js, aligned with Microservices Architecture for modularity and maintainability.",
+  "Collaborated cross-functionally with frontend teams and SRE, Database, and DevOps engineers to deliver high-performance, end-to-end solutions.",
+  "Secured APIs with JWT and Role-Based Access Control (RBAC), ensuring robust authentication and fine-grained authorization.",
+  "Engineered efficient database layers using PostgreSQL; optimized complex SQL queries for reduced latency and improved throughput.",
+  "Spearheaded backend development for key modules in e-Nibandan and MPWebGIS; led design and logic for the Marriage module (second largest in scale) focusing on performance and scalability.",
+  "Advocated clean code practices, modular architecture, and reusable logic to minimize tech debt and accelerate development velocity.",
+  "Utilized profiling tools and real-time monitoring to proactively identify and resolve backend performance bottlenecks.",
+  "Integrated Redis for session management and caching to enhance application speed and scalability.",]
+};
