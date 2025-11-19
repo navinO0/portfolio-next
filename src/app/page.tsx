@@ -8,6 +8,7 @@ import HeaderComponent from "@/custume-components/header";
 import ExperienceShowCaseCard from "@/custume-components/eperience-showc";
 import { experiences } from "../../assets/index";
 import ContactComponent from "@/custume-components/contact";
+import StarfieldCanvas from "@/custume-components/bg-stars";
 
 import {
   FaDatabase,
@@ -171,18 +172,19 @@ export default function Page() {
               transform: `rotate(${rotate}deg)`,
             }}
           >
-            <Icon />
+            {/* <Icon /> */}
           </div>
         );
       })}
-
-      {/* Portfolio Content */}
       <HeaderComponent />
       <IntroComponent />
       <AboutComponent />
       <ExperienceShowCaseCard experiences={experiences} />
       <ProjectsComponents />
       <ContactComponent />
+       <StarfieldCanvas>
+      <main></main>
+    </StarfieldCanvas>
     </div>
   );
 }
