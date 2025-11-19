@@ -9,6 +9,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Fade } from "react-awesome-reveal"
 import { BiLinkExternal } from "react-icons/bi"
 import { SiGithub } from "react-icons/si"
+import { CometCard } from "@/components/ui/comet-card"
 
 const ProjectItem = ({ projectItem }) => {
   const { projectLink, projectTitle, projectKeyPoints, technologiesUsed, credentials, gitHubLink, thumbnails, docUrl } =
@@ -18,6 +19,7 @@ const ProjectItem = ({ projectItem }) => {
 
   return (
     <Fade duration={1500}>
+      <CometCard>
   <Card className="relative group w-full bg-zinc-900 text-white h-full border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
     {/* Glass-like diagonal shine */}
 <span className="absolute top-0 left-[-150%] w-1/3 h-full bg-gradient-to-br from-transparent via-white/40 to-transparent skew-x-[-20deg] group-hover:left-[150%] transition-all duration-700 ease-in-out pointer-events-none"></span>
@@ -73,7 +75,8 @@ const ProjectItem = ({ projectItem }) => {
         </div>
       </CardContent>
     </div>
-  </Card>
+        </Card>
+        </CometCard>
 </Fade>
 
   )

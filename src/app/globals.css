@@ -1,8 +1,12 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 
 @custom-variant dark (&:is(.dark *));
@@ -288,3 +292,534 @@
   animation: pulse 2s infinite;
 }
 
+
+
+.flip-wrapper {
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+/* Main animated text container */
+.flip-container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: bold;
+  /* padding-top: 200px; */
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 45%; */
+  display: block;
+  display: flex ! important;
+  gap: 10px;
+  justify-content: center;
+  align-items: center
+}
+
+/* Box that contains the flipping words */
+.flip-box {
+  height: 90px;
+  overflow: hidden;
+}
+
+/* The actual flipping items */
+.flip-box > div > div {
+  color: #fff;
+  /* padding: 4px 12px; */
+  height: 55px;
+  margin-bottom: 45px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* First word animation */
+.flip-box > div:first-child {
+  animation: flipShow 5s linear infinite;
+}
+
+/* Colors for each item */
+.flip-box > div div {
+  /* background: #42c58a; */
+}
+.flip-box > div:first-child div {
+  /* background: #4ec7f3; */
+}
+.flip-box > div:last-child div {
+  /* background: #DC143C; */
+}
+
+/* Keyframes */
+@keyframes flipShow {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+/* Caption under animation */
+.flip-caption {
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  font-size: 19px;
+  color: #999;
+  margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* keep original behavior if you want hidden overflow (optional) */
+.kaio-html, .kaio-body {
+  /* no-op - keep normal scrolling by default. If you want to hide overflow, uncomment below */
+  /* overflow: hidden; */
+}
+
+/* container */
+.kaio-container {
+
+ 
+  /* background: #232323; */
+  display: flex;
+  justify-content: START;
+  align-items: center;
+  /* position: relative; */
+  font-family: 'Poppins', sans-serif;
+  color: #ec4848;
+}
+
+/* box */
+.kaio-box {
+  /* width: 250px;
+  height: 250px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* title area */
+.kaio-title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+/* animated block (primary) */
+.kaio-block {
+  width: 0%;
+  height: inherit;
+  background: #e0e0e0;
+  position: absolute;
+  animation: kaio-mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  display: flex;
+  left: 0;
+  top: 0;
+}
+
+/* heading */
+.kaio-heading {
+  font-family: 'Poppins', sans-serif;
+  color: #e01313;
+  font-size: 52px;
+  animation: kaio-mainFadeIn 2s forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+  display: flex;
+  font-weight: 600;
+  align-items: baseline;
+  position: relative;
+  padding: 0 8px;
+}
+
+/* small pop dot next to name */
+.kaio-dot {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #ffb510;
+  animation: kaio-popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}
+
+/* role row */
+.kaio-role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: -10px;
+}
+
+/* secondary colored block */
+.kaio-block--secondary {
+  background: #756de269;
+  animation: kaio-secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 2s;
+}
+
+/* role text */
+.kaio-role-text {
+  animation: kaio-secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  /* padding-left: 6px; */
+  z-index: 2;
+}
+
+/* keyframes */
+@keyframes kaio-mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes kaio-secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes kaio-mainFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes kaio-popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    border: 0px solid #ddd;
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #e9d856;
+    border: 0px solid #222;
+    bottom: 13px;
+  }
+}
+
+@keyframes kaio-secFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+/* footer (link wrapper) */
+.kaio-footer-link {
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* footer box */
+.kaio-footer {
+  width: 350px;
+  height: 80px;
+  background: #ffb510;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: kaio-top 0.8s forwards;
+  animation-delay: 4s;
+  border: none;
+}
+
+/* footer content */
+.kaio-footer-inner { display: flex; align-items: center; justify-content: center; }
+
+.kaio-footer-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #232323;
+  font-family: 'Poppins';
+  gap: 12px;
+}
+
+/* youtube SVG icon */
+.kaio-footer-icon {
+  margin-right: 8px;
+  font-size: 22px;
+  color: #232323;
+  animation: kaio-icon 2s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+/* footer animations */
+@keyframes kaio-top {
+  0% { opacity: 0; bottom: -80px; }
+  100% { opacity: 1; bottom: 0px; }
+}
+
+@keyframes kaio-icon {
+  0% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1.3) rotate(-2deg); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* small responsive tweak */
+@media (max-width: 420px) {
+  .kaio-box { width: 200px; height: 200px; }
+  .kaio-heading { font-size: 24px; }
+  .kaio-footer { width: 300px; height: 60px; }
+}
+
+
+
+
+
+/* 
+light-cursor */
+
+/* Light Cursor styles (prefix: lc-) */
+.lc-inner {
+  position: fixed; /* use fixed so it tracks viewport coordinates */
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: white;
+  border: 10px solid #F1C40F; /* color from your original */
+  box-shadow:
+    0 0 10px white,
+    0 0 15px white,
+    0 0 20px white,
+    0 0 40px #F1C40F,
+    0 0 55px #F1C40F;
+  transform: translate(-50%, -50%); /* center by offset — GSAP uses translate too */
+  z-index: 9999;
+  pointer-events: none; /* important so it never blocks clicks */
+  will-change: transform; /* hint for smoother animations */
+}
+
+/* Visible state */
+.lc-inner--visible {
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+/* Hidden state (if you ever want to hide) */
+.lc-inner--hidden {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+/* Smaller on mobile */
+@media (max-width: 640px) {
+  .lc-inner {
+    width: 18px;
+    height: 18px;
+    border-width: 8px;
+    box-shadow:
+      0 0 8px white,
+      0 0 12px white,
+      0 0 16px white,
+      0 0 30px #F1C40F,
+      0 0 40px #F1C40F;
+  }
+}
+
+.lc-inner {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color:#F1C40F;
+  border: 10px solid #F1C40F;
+  box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 40px #F1C40F, 0 0 55px #F1C40F;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+  will-change: transform; /* important */
+}
+
+
+
+
+/* -------------------------------
+   Hover Cubes — Unique prefix: nx-cube-
+-------------------------------- */
+
+.nx-cube-wrapper {
+  position: relative;
+  top: -80px;
+  transform: skewY(-20deg);
+  animation: nx-cube-hue 5s linear infinite;
+}
+
+@keyframes nx-cube-hue {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.nx-cube-container {
+  position: relative;
+  display: block;
+  width: max-content;
+  height: auto;
+}
+
+/* individual cube group */
+.nx-cube-item {
+  position: relative;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+/* cube offsets */
+.nx-cube-item-1 { z-index: 2; }
+.nx-cube-item-2 { z-index: 1; transform: translate(-60px, -60px); }
+.nx-cube-item-3 { z-index: 3; transform: translate(60px, 60px); }
+
+/* columns inside cube */
+.nx-cube-column {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: translate(calc(-70px * var(--x)), calc(-60px * var(--y)));
+}
+
+/* boxes */
+.nx-cube-box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #dcdcdc;
+  z-index: calc(1 * var(--i));
+  transition: 1.5s;
+}
+
+/* hover */
+.nx-cube-box:hover {
+  background: #ef4149;
+  filter: drop-shadow(0 0 30px #ef4149);
+  transition: 0s;
+}
+
+/* Left face */
+.nx-cube-box::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 1.5s;
+}
+
+/* Top face */
+.nx-cube-box::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 1.5s;
+}
+
+/* hover instant effect for faces */
+.nx-cube-box:hover::before,
+.nx-cube-box:hover::after {
+  background: #ef4149;
+  transition: 0s;
+}
+
+/* Responsive adjustment */
+@media (max-width: 480px) {
+  .nx-cube-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nx-cube-column {
+    gap: 20px;
+    transform: translate(calc(-50px * var(--x)), calc(-45px * var(--y)));
+  }
+
+  .nx-cube-item-2,
+  .nx-cube-item-3 {
+    transform: none; /* simpler on mobile */
+  }
+}

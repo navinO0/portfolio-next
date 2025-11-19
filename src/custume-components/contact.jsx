@@ -5,6 +5,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
 import { SiGithub, SiGmail } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
+import FlipWords from "./flipcard";
 
 
 const ContactComponent = () => (
@@ -12,7 +13,7 @@ const ContactComponent = () => (
     id="contact"
     className="bg-black text-white py-16 px-6 flex flex-col items-center"
   >
-    <Fade direction=""  duration={1000}>
+    <Fade direction="" duration={1000}>
       <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-4xl font-bold">Get In Touch</h1>
         <p className="text-gray-300 text-lg leading-relaxed">
@@ -21,7 +22,7 @@ const ContactComponent = () => (
           knows of relevant openings. Looking forward to new challenges—thank
           you for your time!
         </p>
-
+        {/* <FlipWords /> */}
         <a href="mailto:6y.navin@gmail.com?" target="_blank" rel="noreferrer">
           <button type="button" className="glowing-btn">
             <span className="glowing-txt">
@@ -30,6 +31,7 @@ const ContactComponent = () => (
           </button>
         </a>
       </div>
+
     </Fade>
 
     <div className="mt-12 flex flex-col items-center space-y-6">

@@ -5,6 +5,7 @@ import { ReactTyped } from "react-typed";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { introConent } from "../../assets";
+import KaioAnimated from "../custume-components/name-card";
 
 const IntroComponent = () => {
   return (
@@ -26,9 +27,18 @@ const IntroComponent = () => {
 
 
             <div>
-              <h1 className="text-4xl font-bold tracking-tight text-red-400">
-                Naveen Kumar
-              </h1>
+              <div>
+  
+  <h1 className="block md:hidden text-4xl font-bold tracking-tight text-red-400">
+    Naveen Kumar
+  </h1>
+
+
+  <div className="hidden md:block">
+    <KaioAnimated />
+  </div>
+</div>
+
 
               <h3 className="text-lg font-medium text-gray-300 mt-2">
                 I Build Things for the Web.
@@ -39,7 +49,7 @@ const IntroComponent = () => {
               <ReactTyped
                 className="block"
                 strings={introConent}
-                typeSpeed={30}
+                typeSpeed={10}
                 backSpeed={50}
                 smartBackspace
                 fadeOut

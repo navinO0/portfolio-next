@@ -13,14 +13,14 @@ const ProjectsComponents = () => (
         <div className="w-20 h-1 bg-blue-500 mx-auto mt-2 rounded" />
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-15 md:grid-cols-3">
         {projectsObject.map((projectItem) => (
           <ProjectItem key={projectItem.id} projectItem={projectItem} />
         ))}
       </div>
 
       <h2 className="text-2xl font-semibold mt-12 mb-6 text-center">Mini Projects</h2>
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-11 sm:grid-cols-2 lg:grid-cols-3">
         {miniProjectObj.map((projectItem) => (
           <MiniProjectItem key={projectItem.id} eachOne={projectItem} />
         ))}

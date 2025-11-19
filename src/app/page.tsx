@@ -9,6 +9,7 @@ import ExperienceShowCaseCard from "@/custume-components/eperience-showc";
 import { experiences } from "../../assets/index";
 import ContactComponent from "@/custume-components/contact";
 import StarfieldCanvas from "@/custume-components/bg-stars";
+import LightCursor from "../custume-components/light-cursor";
 
 import {
   FaDatabase,
@@ -176,6 +177,7 @@ export default function Page() {
           </div>
         );
       })}
+      <LightCursor />
       <HeaderComponent />
       <IntroComponent />
       <AboutComponent />
@@ -184,7 +186,7 @@ export default function Page() {
       <ContactComponent />
        <StarfieldCanvas>
       <main></main>
-    </StarfieldCanvas>
+      </StarfieldCanvas>
     </div>
   );
 }
