@@ -185,9 +185,12 @@ export default function StarfieldCanvas({ children }) {
     }
 
     function onTouchMove(e) {
+      // IMPORTANT: do NOT call preventDefault() here. That blocks native scrolling on mobile.
       touchInputRef.current = true;
-      movePointer(e.touches[0].clientX, e.touches[0].clientY);
-      e.preventDefault();
+      // Use the first touch point to allow parallax while keeping scrolling native.
+      if (e.touches && e.touches[0]) {
+        movePointer(e.touches[0].clientX, e.touches[0].clientY);
+      }
     }
 
     function onMouseLeave() {
@@ -200,10 +203,10 @@ export default function StarfieldCanvas({ children }) {
     resize();
     window.addEventListener("resize", resize);
 
-    // IMPORTANT: Do not capture pointer events on the canvas so the page content remains interactive.
-    // We'll still listen to pointer movement on window for the parallax effect.
+    // Listen to pointer movement on window so the canvas doesn't capture events and block UI.
     window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("touchmove", onTouchMove, { passive: false });
+    // Use passive: true for touchmove so the browser can continue native scrolling.
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
     window.addEventListener("touchend", onMouseLeave);
     document.addEventListener("mouseleave", onMouseLeave);
 
