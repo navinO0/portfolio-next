@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 export default function LightCursorSmooth({
-  smoothing = 0.03, // seconds; set to 0 for exact
+  smoothing = 0, // seconds; set to 0 for exact
 }) {
   const cursorRef = useRef(null);
   const tweenRef = useRef(null);
@@ -58,7 +58,7 @@ export default function LightCursorSmooth({
   return (
     <div
       ref={cursorRef}
-      className="lc-inner lc-inner--visible"
+      className="lc-inner lc-inner--visible hidden md:block"
       style={{ left: 0, top: 0 }}
       aria-hidden="true"
     />

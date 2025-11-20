@@ -20,64 +20,64 @@ const ProjectItem = ({ projectItem }) => {
   return (
     <Fade duration={1500}>
       <CometCard>
-  <Card className="relative group w-full bg-zinc-900 text-white h-full border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
-    {/* Glass-like diagonal shine */}
-<span className="absolute top-0 left-[-150%] w-1/3 h-full bg-gradient-to-br from-transparent via-white/40 to-transparent skew-x-[-20deg] group-hover:left-[150%] transition-all duration-700 ease-in-out pointer-events-none"></span>
+        <Card className="relative group w-full bg-zinc-900 text-white h-full border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition overflow-hidden">
+          {/* Glass-like diagonal shine */}
+          <span className="absolute top-0 left-[-150%] w-1/3 h-full bg-gradient-to-br from-transparent via-white/40 to-transparent skew-x-[-20deg] group-hover:left-[150%] transition-all duration-700 ease-in-out pointer-events-none"></span>
 
 
-    <div className="relative z-10">
-      <CardHeader>
-        <CardTitle className="text-lg font-semibold tracking-wide hover:text-blue-400 transition">
-          <a href={projectLink} target="_blank" rel="noreferrer">
-            {projectTitle}
-          </a>
-        </CardTitle>
-        {credentials && <p className="text-sm text-gray-400">{credentials}</p>}
-      </CardHeader>
+          <div className="relative z-10">
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold tracking-wide hover:text-blue-400 transition">
+                <a href={projectLink} target="_blank" rel="noreferrer">
+                  {projectTitle}
+                </a>
+              </CardTitle>
+              {credentials && <p className="text-sm text-gray-400">{credentials}</p>}
+            </CardHeader>
 
-      <CardContent className="space-y-4">
-        <ScrollArea className="h-100 pr-2">
-          <ul className="list-disc list-inside text-sm space-y-1">
-            {projectKeyPoints.map((point, idx) => (
-              <li key={idx} className="text-gray-300">
-                {point}
-              </li>
-            ))}
-          </ul>
-        </ScrollArea>
+            <CardContent className="space-y-4">
+              <ScrollArea className="h-100 pr-2">
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  {projectKeyPoints.map((point, idx) => (
+                    <li key={idx} className="text-gray-300">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </ScrollArea>
 
-        <div className="flex flex-wrap gap-3 pt-2">
-          <a href={gitHubLink} target="_blank" rel="noreferrer">
-            <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
-              <SiGithub className="mr-2 h-4 w-4" />
-              GitHub
-            </Button>
-          </a>
-          <a href={projectLink} target="_blank" rel="noreferrer">
-            <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
-              <BiLinkExternal className="mr-2 h-4 w-4" />
-              Project
-            </Button>
-          </a>
-          {docUrl && (
-            <a href={docUrl} target="_blank" rel="noreferrer">
-              <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
-                <BiLinkExternal className="mr-2 h-4 w-4" />
-                Docs
-              </Button>
-            </a>
-          )}
-        </div>
+              <div className="flex flex-wrap gap-3 pt-2">
+                <a href={gitHubLink} target="_blank" rel="noreferrer">
+                  <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
+                    <SiGithub className="mr-2 h-4 w-4" />
+                    GitHub
+                  </Button>
+                </a>
+                <a href={projectLink} target="_blank" rel="noreferrer">
+                  <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
+                    <BiLinkExternal className="mr-2 h-4 w-4" />
+                    Project
+                  </Button>
+                </a>
+                {docUrl && (
+                  <a href={docUrl} target="_blank" rel="noreferrer">
+                    <Button variant="outline" className="border-white/20 bg-black text-white hover:bg-white hover:text-black">
+                      <BiLinkExternal className="mr-2 h-4 w-4" />
+                      Docs
+                    </Button>
+                  </a>
+                )}
+              </div>
 
-        <div className="pt-2">
-          <p className="text-sm font-medium text-white">Technologies Used:</p>
-          <p className="text-xs text-gray-400">{technologiesUsed}</p>
-        </div>
-      </CardContent>
-    </div>
+              <div className="pt-2">
+                <p className="text-sm font-medium text-white">Technologies Used:</p>
+                <p className="text-xs text-gray-400">{technologiesUsed}</p>
+              </div>
+            </CardContent>
+          </div>
         </Card>
-        </CometCard>
-</Fade>
+      </CometCard>
+    </Fade>
 
   )
 }

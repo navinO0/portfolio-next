@@ -142,7 +142,7 @@
   border: 0.1em solid var(--glow-color);
   border-radius: 0.45em;
   background: none;
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: 2em;
   font-weight: 400;
   letter-spacing: 0.3em;
@@ -400,7 +400,7 @@
   justify-content: START;
   align-items: center;
   /* position: relative; */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', monospace;
   color: #ec4848;
 }
 
@@ -437,7 +437,7 @@
 
 /* heading */
 .kaio-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', monospace;
   color: #e01313;
   font-size: 52px;
   animation: kaio-mainFadeIn 2s forwards;
@@ -488,7 +488,7 @@
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', monospace;
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
@@ -649,8 +649,8 @@ light-cursor */
 /* Light Cursor styles (prefix: lc-) */
 .lc-inner {
   position: fixed; /* use fixed so it tracks viewport coordinates */
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: white;
@@ -823,3 +823,76 @@ light-cursor */
     transform: none; /* simpler on mobile */
   }
 }
+
+
+
+
+.text-block {
+  /* margin: 7vw; */
+  /* max-width: 800px; */
+  font-family: monospace;
+  font-size: clamp(11px, 1vw, 14px); 
+  color: #ffffffb6;
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none !important;
+  }
+}
+
+body {
+  font-family: monospace !important;
+}
+
+
+/*falling text */
+
+.falling-text-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.falling-text-target {
+  display: inline-block;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 2px;
+  user-select: none;
+}
+
+.highlighted {
+  color: cyan;
+  font-weight: bold;
+}
+
+.falling-text-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+

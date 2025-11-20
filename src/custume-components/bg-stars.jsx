@@ -7,7 +7,7 @@ import React, { useEffect, useRef } from "react";
 //   <main>Your page content (clickable/hoverable) goes here</main>
 // </StarfieldCanvas>
 
-const STAR_COLOR = "#fff";
+const STAR_COLOR = "#ffffffa1";
 const STAR_SIZE = 3;
 const STAR_MIN_SCALE = 0.2;
 const OVERFLOW_THRESHOLD = 50;
@@ -28,7 +28,8 @@ export default function StarfieldCanvas({ children }) {
   const getStarCount = () => {
     // fallback if window not available
     if (typeof window === "undefined") return 200;
-    return Math.round((window.innerWidth + window.innerHeight) / 8);
+    // return Math.round((window.innerWidth + window.innerHeight) / 8);
+    return 100
   };
 
   useEffect(() => {

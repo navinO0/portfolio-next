@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { introConent } from "../../assets";
 import KaioAnimated from "../custume-components/name-card";
+import BlurText from "./blur-text";
 
 const IntroComponent = () => {
   return (
@@ -28,16 +29,16 @@ const IntroComponent = () => {
 
             <div>
               <div>
-  
-  <h1 className="block md:hidden text-4xl font-bold tracking-tight text-red-400">
-    Naveen Kumar
-  </h1>
+
+                <h1 className="block md:hidden text-4xl font-bold tracking-tight text-red-400">
+                  Naveen Kumar
+                </h1>
 
 
-  <div className="hidden md:block">
-    <KaioAnimated />
-  </div>
-</div>
+                <div className="hidden md:block">
+                  <KaioAnimated />
+                </div>
+              </div>
 
 
               <h3 className="text-lg font-medium text-gray-300 mt-2">
@@ -46,13 +47,21 @@ const IntroComponent = () => {
             </div>
 
             <div className="text-base font-light font-sans max-w-screen font-typewriter text-l text-gray-300 text-start w-full md:min-w-[70vw] max-w-screen leading-relaxed">
-              <ReactTyped
+              {/* <ReactTyped
                 className="block"
                 strings={introConent}
                 typeSpeed={10}
                 backSpeed={50}
                 smartBackspace
                 fadeOut
+              /> */}
+                  <BlurText
+                text="Logical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications. Judicious and creative when crafting effective websites, apps and platforms to propel competitive advantage and revenue growth. Technically proficient and analytical problem solver with calm and focused demeanor."
+                delay={150}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-1xl md:!text-2xl !text-grey-300 mb-8 text-block"
               />
             </div>
 

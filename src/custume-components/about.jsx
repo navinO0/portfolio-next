@@ -26,6 +26,7 @@ import {
 } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { experienceContent } from "../../assets";
+import ScrambledText from "./scrambled-text";
 
 const techStackIcons = [
     { icon: AiFillHtml5, label: "HTML" },
@@ -64,32 +65,65 @@ const AboutComponent = () => {
                     <Separator className="border-gray-700" />
 
                     <div className="space-y-6 text-gray-300">
-                        <p>
+                        <ScrambledText
+                            className="!text-grey-300  "
+                            radius={100}
+                            duration={1.2}
+                            speed={0.5}
+                            scrambleChars=".:"
+                        >
                             Hello! My name is <span className="font-semibold">Naveen</span>,
-                            and I’m a Backend Developer with 2 years of experience in building
-                            scalable and high-performance web applications. My journey started
-                            with a passion for problem-solving and creating efficient digital
-                            solutions. Over time, I honed my skills in Node.js, Express.js,
-                            Fastify, SQL, NoSQL, and React.js, focusing on API development,
-                            performance optimization, and system security. Currently, I'm
-                            seeking opportunities to apply my expertise in a dynamic and
-                            innovative environment. Let's collaborate and bring your ideas to
-                            life!
-                        </p>
-                        <p>
+                            and I’m a FULL STACK SOFTWARE DEVELOPER with 3+ years of cumulative experience (2+ years professional, 1+ year
+                            certified industry experience) in developing scalable, production-grade Web Services and Microservices.
+                            Proficient in both front-end and back-end development, specializing in API Development and API Integration.
+                            Strong foundation in multiple back-end languages including Node.js, and JavaScript frameworks like Fastify
+                            (similar to Express.js). Expertise in database technologies (PostgreSQL, Redis) and implementing robust security
+                            and data protection settings using JWT, OAuth, and AES/RSA encryption. Proven ability to collaborate in a
+                            remote team environment to deploy software systems and contribute to complex projects from conception to
+                            end
+
+                        </ScrambledText>
+
+                        <ScrambledText
+                            className="scrambled-text-demo"
+                            radius={100}
+                            duration={1.2}
+                            speed={0.5}
+                            scrambleChars=".:"
+                        >
                             Exploring DevOps, CI/CD, and cloud technologies (AWS, Azure) has
                             further fueled my passion for building robust and efficient
                             systems. I’m grateful to have turned my passion into a career,
                             constantly learning and improving to create impactful digital
                             experiences!
-                        </p>
+                        </ScrambledText>
+
+                        {/* <p>
+                        Hello! My name is <span className="font-semibold">Naveen</span>,
+                        and I’m a Backend Developer with 2 years of experience in building
+                        scalable and high-performance web applications. My journey started
+                        with a passion for problem-solving and creating efficient digital
+                        solutions. Over time, I honed my skills in Node.js, Express.js,
+                        Fastify, SQL, NoSQL, and React.js, focusing on API development,
+                        performance optimization, and system security. Currently, I'm
+                        seeking opportunities to apply my expertise in a dynamic and
+                        innovative environment. Let's collaborate and bring your ideas to
+                        life!
+                    </p>
+                    <p>
+                        Exploring DevOps, CI/CD, and cloud technologies (AWS, Azure) has
+                        further fueled my passion for building robust and efficient
+                        systems. I’m grateful to have turned my passion into a career,
+                        constantly learning and improving to create impactful digital
+                        experiences!
+                    </p> */}
                     </div>
 
                     {/* Tech Stack Typed */}
                     <div>
                         <h3 className="text-xl font-semibold mb-2 text-white">Tech Stack</h3>
                         <ReactTyped
-                            className="block text-gray-300"
+                            className="block !text-gray-300 text-block"
                             strings={[
                                 "JavaScript Development",
                                 "React Library",
@@ -164,7 +198,7 @@ const AboutComponent = () => {
                             </ul>
                         </div>
                         {/* Company Logo */}
-                        <div className="mt-6 hidden md:flex justify-center items-center">
+                        {/* <div className="mt-6 hidden md:flex justify-center items-center">
                             <Fade duration={2000} >
                                 <img
                                     src="https://res.cloudinary.com/dzapdxkgc/image/upload/v1740598607/Quantela_Logo_White-1_xtebtj.svg"
@@ -172,7 +206,7 @@ const AboutComponent = () => {
                                     className="h-16 object-contain"
                                 />
                             </Fade>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </Fade>
