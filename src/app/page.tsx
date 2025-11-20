@@ -15,6 +15,9 @@ export default function Page() {
     <div
       className="relative w-full min-h-screen bg-zinc-900 overflow-hidden"
     >
+      <StarfieldCanvas>
+      <main></main>
+      </StarfieldCanvas>
       <LightCursorSmooth />
       <HeaderComponent />
       <IntroComponent />
@@ -22,9 +25,7 @@ export default function Page() {
       <ExperienceShowCaseCard experiences={experiences} />
       <ProjectsComponents />
       <ContactComponent />
-      <StarfieldCanvas>
-      <main></main>
-      </StarfieldCanvas>
+      
 
     </div>
   );
