@@ -65,14 +65,14 @@ const AboutComponent = () => {
                     <Separator className="border-gray-700" />
 
                     <div className="space-y-6 text-gray-300">
-                        <ScrambledText
+                        {/* <ScrambledText
                             className="!text-grey-300  "
                             radius={100}
                             duration={1.2}
                             speed={0.5}
                             scrambleChars=".:"
-                        >
-                            Hello! My name is <span className="font-semibold">Naveen</span>,
+                        > */}
+                            {/* Hello! My name is <span className="font-semibold">Naveen</span>,
                             and I’m a FULL STACK SOFTWARE DEVELOPER with 3+ years of cumulative experience (2+ years professional, 1+ year
                             certified industry experience) in developing scalable, production-grade Web Services and Microservices.
                             Proficient in both front-end and back-end development, specializing in API Development and API Integration.
@@ -80,25 +80,25 @@ const AboutComponent = () => {
                             (similar to Express.js). Expertise in database technologies (PostgreSQL, Redis) and implementing robust security
                             and data protection settings using JWT, OAuth, and AES/RSA encryption. Proven ability to collaborate in a
                             remote team environment to deploy software systems and contribute to complex projects from conception to
-                            end
+                            end */}
 
-                        </ScrambledText>
+                        {/* </ScrambledText> */}
 
-                        <ScrambledText
+                        {/* <ScrambledText
                             className="scrambled-text-demo"
                             radius={100}
                             duration={1.2}
                             speed={0.5}
                             scrambleChars=".:"
-                        >
-                            Exploring DevOps, CI/CD, and cloud technologies (AWS, Azure) has
+                        > */}
+                            {/* Exploring DevOps, CI/CD, and cloud technologies (AWS, Azure) has
                             further fueled my passion for building robust and efficient
                             systems. I’m grateful to have turned my passion into a career,
                             constantly learning and improving to create impactful digital
-                            experiences!
-                        </ScrambledText>
+                            experiences! */}
+                        {/* </ScrambledText> */}
 
-                        {/* <p>
+                        <p>
                         Hello! My name is <span className="font-semibold">Naveen</span>,
                         and I’m a Backend Developer with 2 years of experience in building
                         scalable and high-performance web applications. My journey started
@@ -116,7 +116,7 @@ const AboutComponent = () => {
                         systems. I’m grateful to have turned my passion into a career,
                         constantly learning and improving to create impactful digital
                         experiences!
-                    </p> */}
+                    </p>
                     </div>
 
                     {/* Tech Stack Typed */}
@@ -187,7 +187,7 @@ const AboutComponent = () => {
                             <ul className=" list-inside space-y-2 text-gray-300">
                                 {experienceContent.company.map((item, idx) => (
                                     <Fade key={idx} duration={1200} >
-                                        <li className="font-medium list-style-none text-white">{item}</li>
+                                        <li className="text-lg font-semibold list-style-none text-white-300">{item}</li>
                                     </Fade>
                                 ))}
                                 {experienceContent.expContent.map((item, idx) => (

@@ -490,12 +490,13 @@ export const experienceContent = {
   ],
   title: "Backend Developer",
   expContent: [
-    "Developed and maintained scalable, production-grade RESTful APIs using Fastify and Node.js, aligned with Microservices Architecture for modularity and maintainability.",
-  "Collaborated cross-functionally with frontend teams and SRE, Database, and DevOps engineers to deliver high-performance, end-to-end solutions.",
-  "Secured APIs with JWT and Role-Based Access Control (RBAC), ensuring robust authentication and fine-grained authorization.",
-  "Engineered efficient database layers using PostgreSQL; optimized complex SQL queries for reduced latency and improved throughput.",
-  "Spearheaded backend development for key modules in e-Nibandan and MPWebGIS; led design and logic for the Marriage module (second largest in scale) focusing on performance and scalability.",
-  "Advocated clean code practices, modular architecture, and reusable logic to minimize tech debt and accelerate development velocity.",
-  "Utilized profiling tools and real-time monitoring to proactively identify and resolve backend performance bottlenecks.",
-  "Integrated Redis for session management and caching to enhance application speed and scalability.",]
+  "Architected and maintained scalable, production-grade RESTful APIs using Node.js and Fastify, following Microservices Architecture principles to maximize system modularity and performance.",
+  "Secured high-scale application APIs by implementing JWT and Role-Based Access Control (RBAC), establishing robust authentication and fine-grained authorization policies.",
+  "Led backend development for high-scale, mission-critical modules in major government projects (e.g., eNibandan, MPWebGIS), specifically designing the logic for the Marriage module (second largest in scale) with a focus on performance and scalability.",
+  "Optimized the PostgreSQL database layer and refactored complex queries, resulting in measurably high throughput and significant reduction in API latency.",
+  "Integrated Redis for high-speed session management and caching, directly enhancing overall application speed and ability to handle increased traffic.",
+  "Collaborated cross-functionally with Frontend, SRE, and DevOps teams to deliver high-performance, end-to-end solutions and ensure seamless deployment.",
+  "Championed and enforced clean code practices, modular architecture, and reusable logic, effectively minimizing technical debt and accelerating development velocity."
+]
+
 };

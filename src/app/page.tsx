@@ -1,6 +1,4 @@
 "use client";
-
-import { useRef } from "react";
 import IntroComponent from "@/custume-components/intro";
 import AboutComponent from "@/custume-components/about";
 import ProjectsComponents from "@/custume-components/projects";
